@@ -4,43 +4,26 @@ using namespace std;
 
 int main()
 {
-     int number;
-     cin>> number ;
-
-            if(number<=100 &&number>=1)
-            {
-                 int arr[number] ;
-
-                for(int i =0; i<number; i++)
-                {
-                    int num ;
-                    cin>> num ;
-                    if(num >=1 && num<=100)
-                    {
-                        arr[i] = num;
-                    }
-                }
-
-
-            for (int i = 0; i < number; i++)
-            {
-                 for (int j= i; j < number; j++)
-                {
-                    if(arr[j]<arr[i])
-                    {
-                        int temp = arr[j];
-                        arr[j] = arr[i];
-                                                arr[i] = temp;
-
-                    }
-                }
-
+    int num;
+    cin >> num;
+    int arr[num];
+    for(int i = 0; i < num; i++){
+        cin >> arr[i];
+    }
+    int temp;
+    for(int i = 0; i < num; i++){
+        for(int j = 0; j < num; j++){
+            if((j+1) == num)
+                break;
+            if(arr[j] > arr[j + 1]){
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp ;
             }
-            for(int i =0 ; i< number ; i++)
-            {
-                cout<<arr[i]<<" " ;
-            }
-            }
-
+        }
+    }
+    for(int i = 0; i < num; i++){
+        cout << arr[i] << " ";
+    }
     return 0;
 }

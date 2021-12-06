@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555092127 source:c:\users\abdo ali\desktop\let strated\acm proplems\a. petya and strings\main.cpp
+	<iostream>
+	<string>
+	<string.h>
+
