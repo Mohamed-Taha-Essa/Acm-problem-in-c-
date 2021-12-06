@@ -1,2 +1,2 @@
-# Acm-problem-in-c-
+# Acm-problem-in-python
 problem solving 
